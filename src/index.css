@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Animated number flash for CryptoTable */
+.animate-flash-green { animation: flash-green 0.4s; }
+.animate-flash-red { animation: flash-red 0.4s; }
+@keyframes flash-green { 0% { background: #bbf7d0; } 100% { background: none; } }
+@keyframes flash-red { 0% { background: #fecaca; } 100% { background: none; } }
