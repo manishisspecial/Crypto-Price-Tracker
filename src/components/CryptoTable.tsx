@@ -143,7 +143,7 @@ const CryptoTable = () => {
                 </td>
                 <td className="py-4 px-2 align-middle font-bold text-gray-900 dark:text-white">{asset.name}</td>
                 <td className="py-4 px-2 align-middle text-xs text-gray-400 dark:text-gray-400 font-semibold">{asset.symbol}</td>
-                <td className="py-4 px-2 align-middle font-bold text-gray-900">
+                <td className="py-4 px-2 align-middle font-bold text-gray-900 dark:text-white">
                   <AnimatedNumber value={asset.price} formatFn={formatNumber} />
                 </td>
                 <td className="py-4 px-2 align-middle">
@@ -164,7 +164,7 @@ const CryptoTable = () => {
                     <AnimatedNumber value={asset.change7d} formatFn={formatPercentage} />
                   </span>
                 </td>
-                <td className="py-4 px-2 align-middle font-semibold text-gray-700">
+                <td className="py-4 px-2 align-middle font-semibold text-gray-700 dark:text-white">
                   <AnimatedNumber value={asset.marketCap} formatFn={v => formatNumber(v, 0)} />
                 </td>
                 <td className="py-4 px-2 align-middle">
@@ -254,7 +254,7 @@ const CryptoTable = () => {
                     onClick={() => setSelectedRow(index)}
                   >
                     <td className="py-4 px-2 align-middle text-xs text-gray-400 dark:text-gray-400 font-semibold">{asset.symbol}</td>
-                    <td className="py-4 px-2 align-middle font-bold text-gray-900">
+                    <td className="py-4 px-2 align-middle font-bold text-gray-900 dark:text-white">
                       <AnimatedNumber value={asset.price} formatFn={formatNumber} />
                     </td>
                     <td className="py-4 px-2 align-middle">
@@ -275,7 +275,7 @@ const CryptoTable = () => {
                         <AnimatedNumber value={asset.change7d} formatFn={formatPercentage} />
                       </span>
                     </td>
-                    <td className="py-4 px-2 align-middle font-semibold text-gray-700">
+                    <td className="py-4 px-2 align-middle font-semibold text-gray-700 dark:text-white">
                       <AnimatedNumber value={asset.marketCap} formatFn={v => formatNumber(v, 0)} />
                     </td>
                     <td className="py-4 px-2 align-middle">
